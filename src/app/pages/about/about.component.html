@@ -1,0 +1,333 @@
+<section class="main-section">
+  <div class="header-area">
+    <div class="header-main">
+      <div class="logo-area">
+        <a href="#"
+          ><img src="../../../assets/images/logo/Sunshine.png" alt=""
+        /></a>
+      </div>
+      <div class="header-right">
+        <div class="menu-area">
+          <ul>
+            <li><a routerLink="/">Home </a></li>
+            <li><a routerLink="/about">About Us </a></li>
+            <li><a routerLink="/help">Service</a></li>
+            <li><a routerLink="/contact">Contacts </a></li>
+            <li>
+              <a href="#"><i class="fas fa-search"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tel">
+          <a href="tel:0905-456-987-3"
+            ><i class="fa-solid fa-phone-flip"></i>0905-456-987-3</a
+          >
+        </div>
+      </div>
+
+      <div (click)="onToggle()" class="navbar-toggle">
+        <i [ngClass]="toggleMenu ? 'fas fa-bars' : 'fas fa-bars'"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="swipper">
+    <div class="image-swiper">
+      <img src="../../../assets/images/static/image-1.jpg" />
+      <div class="text-swipper">
+        <h1>About Us</h1>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><i class="fa fa-home" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>- Who we are</li>
+        </ul>
+      </div>
+
+      <div class="overlay"></div>
+    </div>
+  </div>
+
+  <div class="mobile-menu" [ngClass]="toggleMenu ? 'show' : 'hidden'">
+    <div class="toggle-menu">
+      <div class="container">
+        <div class="toggle-row">
+          <div class="toggle-top">
+            <div class="toggle-logo">
+              <a href="">
+                <img alt="" src="../../../assets/images/logo/Sunshine.png" />
+              </a>
+            </div>
+            <div class="toggle-icon">
+              <i (click)="onToggle()" class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="toggle-middle">
+            <ul class="toggle-menu">
+              <li><a routerLink="/">Home </a></li>
+              <li><a routerLink="/about">About Us </a></li>
+              <li><a routerLink="/help">Service</a></li>
+              <li><a routerLink="/contact">Contacts </a></li>
+            </ul>
+          </div>
+          <div class="toggle-bottom">
+            <ul>
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-bag-shopping"></i
+              ></a>
+              <span href="">0</span>
+              <a class="menu-children" href="#"
+                ><i class="fa-solid fa-user"></i
+              ></a>
+            </ul>
+            <div class="nav-search">
+              <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+              <input placeholder="Search" type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-us-section">
+  <div class="shape-one"></div>
+  <div class="container">
+    <div class="row">
+      <div class="content">
+        <h2>
+          The Most Talented Interior
+          Designers &amp; Atchitects
+        </h2>
+        <h4>
+          Sit eit malis civibus kase iuvaret blandit ipsum volumus indis
+          referrentur euno utamur vivendo interpretaris.
+        </h4>
+        <div class="text">
+          Beyond more stoic this along goodness this sed wow manatee mongos
+          flusterd impressive man farcrud opened inside owin punitively around
+          after wasteful telling spransac coldly spokeles client. Squid
+          hesitantly gibbered some tyran nically talkative.
+        </div>
+        <div class="link-btn">
+          <a href="about.html" class="theme-btn btn-style-two"><span>Read More</span></a >
+        </div>
+      </div>
+
+      <div class="image-block">
+        <div class="image">
+          <img src="../../../assets/images/static/image-1 (2).jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="funfacts-section">
+    <div class="container">
+      <div class="grid">
+        <div class="counter-alighn">
+          <div class="inner">
+            <div class="content">
+              <span class="count-text">34</span>
+              <div class="text">years experience</div>
+            </div>
+            <div class="image">
+              <img src="../../../assets/images/static/fun1).jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="counter-alighn">
+          <div class="inner">
+            <div class="content">
+              <span class="count-text">75</span>
+
+              <div class="text">projects done</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="counter-alighn">
+          <div class="inner">
+            <div class="content">
+              <span class="count-text">28</span>
+
+              <div class="text">crazy thinkers</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="counter-alighn">
+          <div class="inner">
+            <div class="image">
+              <img src="../../../assets/images/static/fun2.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span class="count-text">95</span>
+
+              <div class="text">Happy Clients</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="flex">
+    <hr />
+    <hr class="big-hr" />
+    <hr />
+  </div>
+  <section class="team-section">
+    <div class="container">
+      <div class="sec-title text-center">
+        <div class="shape-one"></div>
+        <h2>Impressive Minds</h2>
+        <div class="text">
+          Flusterd impressive man farcrud open inside owin punitively around after
+          wasteful <br />coldly spokeles client. Squid hesitantly gibbered some
+          tyran nically.
+        </div>
+      </div>
+      <div class="row">
+        <div class="team-block-one">
+          <div class="inner-box">
+            <div class="image">
+              <img src="../../../assets/images/static/image-14.jpg" alt="" />
+            </div>
+            <div class="overlay">
+              <div class="content">
+                <h4>Chris Jordan</h4>
+                <h5>designer</h5>
+
+                <div class="social-links">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team-block-one">
+          <div class="inner-box">
+            <div class="image">
+              <img src="../../../assets/images/static/image-13.jpg" alt="" />
+            </div>
+            <div class="overlay">
+              <div class="content">
+                <h4>Chris Jordan</h4>
+                <h5>designer</h5>
+
+                <div class="social-links">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team-block-one">
+          <div class="inner-box">
+            <div class="image">
+              <img src="../../../assets/images/static/image-15.jpg" alt="" />
+            </div>
+            <div class="overlay">
+              <div class="content">
+                <h4>Chris Jordan</h4>
+                <h5>designer</h5>
+
+                <div class="social-links">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team-block-one">
+          <div class="inner-box">
+            <div class="image">
+              <img src="../../../assets/images/static/image-16.jpg" alt="" />
+            </div>
+            <div class="overlay">
+              <div class="content">
+                <h4>Chris Jordan</h4>
+                <h5>designer</h5>
+
+                <div class="social-links">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

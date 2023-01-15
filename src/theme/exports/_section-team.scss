@@ -1,0 +1,376 @@
+.team-section {
+    position: relative;
+    padding: 50px 0 0 0;
+  
+    .text-center {
+      text-align: center !important;
+  
+      .shape-one {
+        position: absolute;
+        left: 10px;
+        top: 70px;
+        width: 100%;
+        height: 100px;
+        background-image: url(../../assets/images/static/shape-3.png);
+      }
+      .sec-title-dec {
+        left: 50%;
+        transform: translate(-50%, -145px);
+        position: absolute;
+        top: 0;
+        left: 27px;
+        height: 100px;
+        width: 2px;
+        background-color: #ccad6e;
+  
+        &::before {
+          position: absolute;
+          content: "";
+          left: -25px;
+          top: 25px;
+          width: 2px;
+          height: 50px;
+          box-sizing: border-box;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          right: -25px;
+          top: 25px;
+          width: 2px;
+          height: 50px;
+          box-sizing: border-box;
+        }
+      }
+      h2 {
+        position: relative;
+        font-size: 48px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        letter-spacing: -3px;
+      }
+      .text {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        margin: 0px 0px 15px;
+      }
+    }
+    .row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      .team-block-one {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        .inner-box {
+          position: relative;
+          margin-bottom: 30px;
+          .image {
+            overflow: hidden;
+            img {
+              width: 100%;
+              transition: 0.5s;
+              display: inline-block;
+              max-width: 100%;
+              height: auto;
+              vertical-align: middle;
+              border-style: none;
+            }
+          }
+          .overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.5s;
+            padding: 20px;
+            background-color: rgba(59, 59, 68, 0.9);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 10000;
+            cursor: pointer;
+  
+            .content {
+              width: 100%;
+              height: 100%;
+              border: 1px solid #ccad6e !important;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              h4 {
+                font-size: 22px;
+                font-weight: 500;
+                color: #fff;
+                margin-bottom: 5px;
+              }
+  
+              h5 {
+                font-size: 14px;
+                color: #fff;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+              }
+              .social-links {
+                position: relative;
+                color: #fff;
+                z-index: 10000000000;
+                ul {
+                  color: #fff;
+                  display: flex;
+                  flex-wrap: wrap;
+                  align-items: center;
+                  justify-content: center;
+  
+                  li {
+                    margin: 0 8px;
+                    a {
+                      font-size: 16px;
+                      color: #fff !important;
+                      cursor: pointer !important;
+                    }
+                    i {
+                      font-family: "Font Awesome 5 Brands";
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec-title {
+    position: relative;
+    margin-bottom: 70px;
+    .shape-one {
+      position: absolute;
+      left: 10px;
+      top: 70px;
+      width: 100%;
+      height: 100px;
+      background-image: url(../../assets/images/static/shape-3.png);
+    }
+  }
+  .inner-box:hover .overlay {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+ 
+  @media (max-width:900px) {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        .team-block-one {
+          position: relative;
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          .inner-box {
+            position: relative;
+            margin-bottom: 30px;
+            .image {
+              overflow: hidden;
+              img {
+                width: 100%;
+                transition: 0.5s;
+                display: inline-block;
+                max-width: 100%;
+                height: auto;
+                vertical-align: middle;
+                border-style: none;
+              }
+            }
+            .overlay {
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              opacity: 0;
+              visibility: hidden;
+              transition: 0.5s;
+              padding: 20px;
+              background-color: rgba(59, 59, 68, 0.9);
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              z-index: 10000;
+              cursor: pointer;
+    
+              .content {
+                width: 100%;
+                height: 100%;
+                border: 1px solid #ccad6e !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                h4 {
+                  font-size: 22px;
+                  font-weight: 500;
+                  color: #fff;
+                  margin-bottom: 5px;
+                }
+    
+                h5 {
+                  font-size: 14px;
+                  color: #fff;
+                  text-transform: uppercase;
+                  margin-bottom: 30px;
+                }
+                .social-links {
+                  position: relative;
+                  color: #fff;
+                  z-index: 10000000000;
+                  ul {
+                    color: #fff;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+    
+                    li {
+                      margin: 0 8px;
+                      a {
+                        font-size: 16px;
+                        color: #fff !important;
+                        cursor: pointer !important;
+                      }
+                      i {
+                        font-family: "Font Awesome 5 Brands";
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+  }
+  @media (max-width:500px) {
+    .row {
+        display: grid;
+        grid-template-columns: 1fr!important;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        .team-block-one {
+          position: relative;
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          .inner-box {
+            position: relative;
+            margin-bottom: 30px;
+            .image {
+              overflow: hidden;
+              img {
+                width: 100%;
+                transition: 0.5s;
+                display: inline-block;
+                max-width: 100%;
+                height: auto;
+                vertical-align: middle;
+                border-style: none;
+              }
+            }
+            .overlay {
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              opacity: 0;
+              visibility: hidden;
+              transition: 0.5s;
+              padding: 20px;
+              background-color: rgba(59, 59, 68, 0.9);
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              z-index: 10000;
+              cursor: pointer;
+    
+              .content {
+                width: 100%;
+                height: 100%;
+                border: 1px solid #ccad6e !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                h4 {
+                  font-size: 22px;
+                  font-weight: 500;
+                  color: #fff;
+                  margin-bottom: 5px;
+                }
+    
+                h5 {
+                  font-size: 14px;
+                  color: #fff;
+                  text-transform: uppercase;
+                  margin-bottom: 30px;
+                }
+                .social-links {
+                  position: relative;
+                  color: #fff;
+                  z-index: 10000000000;
+                  ul {
+                    color: #fff;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+    
+                    li {
+                      margin: 0 8px;
+                      a {
+                        font-size: 16px;
+                        color: #fff !important;
+                        cursor: pointer !important;
+                      }
+                      i {
+                        font-family: "Font Awesome 5 Brands";
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+  }
+
+  .team-section .text-center .text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 15px auto;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  }

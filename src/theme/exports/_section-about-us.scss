@@ -1,0 +1,411 @@
+.about-us-section {
+  position: relative;
+  padding: 100px 0 0 0;
+
+  .shape-one {
+    position: absolute;
+    left: 5px;
+    top: 20px;
+    width: 430px;
+    height: 510px;
+    background-image: url(../../assets/images/static/shape-3.png);
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    width: 100% ;
+    margin: 0 auto;
+    gap: 20px;
+    .content {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+      h2 {
+        position: relative;
+        font-size: 48px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        letter-spacing: -3px;
+        font-family: "Work Sans", sans-serif;
+        line-height: 1.2em;
+      }
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        position: relative;
+        line-height: 1.25em;
+        margin: 0px;
+        background: none;
+        margin-bottom: 20px;
+      }
+      .text {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        margin: 0px 0px 15px;
+        margin-bottom: 45px;
+      }
+      .link-btn {
+        margin-bottom: 30px;
+        a:visited {
+          text-decoration: none !important;
+          outline: none;
+        }
+        .btn-style-two {
+          position: relative;
+          display: inline-block;
+          font-size: 16px;
+          line-height: 24px;
+          color: #222;
+          background-color: transparent;
+          padding: 13.5px 44px;
+          font-weight: 600;
+          overflow: hidden;
+          text-transform: uppercase;
+          border: 1px solid #ccad6e;
+          &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            content: "";
+          }
+        }
+      }
+
+      .image-block {
+        position: relative;
+        z-index: 2;
+
+        .image {
+          border: 2px solid white;
+          z-index: 9;
+          overflow: hidden;
+          img{
+            border: 2px solid red;
+            padding: 10px;
+          }
+
+        }
+      }
+    }
+  }
+}
+.image-block{
+  display: contents;
+  img{
+    border: 2px solid white;
+    padding: 20px;
+    background-color: white;
+  }
+}
+
+.image-block > .image {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-block > .image::before {
+  position: absolute;
+  content: "";
+  left: 20px;
+  right: 0;
+  bottom: -90px;
+  background-color: #3b3b44;
+  width: 350px;
+  height: 245px;
+  z-index: -2;
+}
+
+.image-block > .image::after {
+  background-image: url(../../assets/images/logo/Sunshine.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 70px;
+  width: 200px;
+  left: 105px;
+  bottom: -93px;
+  z-index: 3;
+  display: block;
+  content: "";
+}
+
+@media (max-width: 1300px) {
+    .about-us-section {
+      position: relative;
+      padding: 100px 0 0 0;
+
+      .shape-one {
+        display: none;
+        position: absolute;
+        left: 5px;
+        top: 20px;
+        width: 0;
+        height: 0;
+        background-image: none;
+      }
+
+      .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        .content {
+          h2 {
+            position: relative;
+            font-size: 48px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            letter-spacing: -3px;
+            font-family: "Work Sans", sans-serif;
+            line-height: 1.2em;
+          }
+          h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            position: relative;
+            line-height: 1.25em;
+            margin: 0px;
+            background: none;
+            margin-bottom: 20px;
+          }
+          .text {
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+            margin: 0px 0px 15px;
+            margin-bottom: 45px;
+          }
+          .link-btn {
+            margin-bottom: 30px;
+            a:visited {
+              text-decoration: none !important;
+              outline: none;
+            }
+            .btn-style-two {
+              position: relative;
+              display: inline-block;
+              font-size: 16px;
+              line-height: 24px;
+              color: #222;
+              background-color: transparent;
+              padding: 13.5px 44px;
+              font-weight: 600;
+              overflow: hidden;
+              text-transform: uppercase;
+              border: 1px solid #ccad6e;
+              &:before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                content: "";
+              }
+            }
+          }
+
+          .image-block {
+            position: relative;
+            z-index: 2;
+
+            .image {
+              z-index: 9;
+              overflow: hidden;
+              padding: 10px;
+              margin: -10px;
+            }
+          }
+        }
+      }
+    }
+    .image-block > .image{
+      .img{
+        max-width: 350px;
+        width: 100%;
+      }
+    }
+
+    .image-block > .image {
+        display: none;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-block > .image::before {
+        display: none;
+        position: absolute;
+        content: "";
+        left: 156px;
+        right: 0;
+        bottom: -100px;
+        background-color: #3b3b44;
+        width: 439px;
+    }
+
+    .image-block > .image::after {
+    display: none;
+      background-image:none;
+      background-repeat: no-repeat;
+      position: absolute;
+      height: 70px;
+      width: 200px;
+      left: 82px;
+      bottom: -100px;
+      z-index: 3;
+      display: block;
+      content: "";
+    }
+  }
+
+@media (max-width: 500px) {
+  .about-us-section {
+    position: relative;
+    padding: 40px 0 0 0;
+
+    .shape-one {
+      display: none;
+      position: absolute;
+      left: 5px;
+      top: 20px;
+      width: 0;
+      height: 0;
+      background-image: none ;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      max-width: 370px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      .content {
+        h2 {
+          position: relative;
+          font-size: 48px;
+          font-weight: 500;
+          margin-bottom: 30px;
+          letter-spacing: -3px;
+          font-family: "Work Sans", sans-serif;
+          line-height: 1.2em;
+        }
+        h4 {
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom: 30px;
+          position: relative;
+          line-height: 1.25em;
+          margin: 0px;
+          background: none;
+          margin-bottom: 20px;
+        }
+        .text {
+          font-size: 16px;
+          line-height: 26px;
+          font-weight: 400;
+          margin: 0px 0px 15px;
+          margin-bottom: 45px;
+        }
+        .link-btn {
+          margin-bottom: 30px;
+          a:visited {
+            text-decoration: none !important;
+            outline: none;
+          }
+          .btn-style-two {
+            position: relative;
+            display: inline-block;
+            font-size: 16px;
+            line-height: 24px;
+            color: #222;
+            background-color: transparent;
+            padding: 13.5px 44px;
+            font-weight: 600;
+            overflow: hidden;
+            text-transform: uppercase;
+            border: 1px solid #ccad6e;
+            &:before {
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 100%;
+              width: 100%;
+              content: "";
+            }
+          }
+        }
+
+        .image-block {
+          position: relative;
+          z-index: 2;
+
+          .image {
+            z-index: 9;
+            overflow: hidden;
+            padding: 10px;
+            margin: -10px;
+          }
+        }
+      }
+    }
+  }
+
+  .image-block > .image {
+    display: block !important ;
+    position: relative;
+    z-index: 2;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      border: none;
+    padding: 0;
+    background-color: white;
+    }
+  }
+
+  .image-block > .image::before {
+    display: block !important ;
+    position: absolute;
+    content: "";
+    left: -8px;
+    right: 0;
+    bottom: -100px;
+    background-color: #3b3b44 !important;
+    width: 363px;
+  }
+
+  .image-block > .image::after {
+    display: block !important ;
+    background-image: url(../../assets/images/logo/Sunshine.png) !important;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 70px;
+    width: 200px;
+    left: 82px;
+    bottom: -100px;
+    z-index: 3;
+    display: block;
+    content: "";
+  }
+}

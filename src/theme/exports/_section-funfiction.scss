@@ -1,0 +1,116 @@
+.grid {
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    .counter-alighn {
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+
+      .inner {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .count-text {
+          position: relative;
+          font-size: 120px;
+          font-weight: 300;
+          line-height: 120px;
+          padding-bottom: 30px;
+          margin-bottom: 20px;
+          text-align: right !important;
+          &:before {
+            left: auto;
+            right: 0;
+          }
+        }
+        .text {
+          font-size: 16px;
+          line-height: 26px;
+          font-weight: 400;
+          margin: 0px 0px 15px;
+          text-transform: uppercase;
+          margin-bottom: 30px;
+        }
+        .image {
+          margin-left: 60px;
+          margin-right: 0;
+        }
+        img {
+          display: inline-block;
+          max-width: 100%;
+          height: auto;
+          vertical-align: middle;
+          border-style: none;
+        }
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    .grid {
+      margin: 60px auto 0 auto;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      flex-wrap: wrap;
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+
+      .counter-alighn {
+        position: relative;
+        width: 100%;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .inner {
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+
+          .count-text {
+            position: relative;
+            font-size: 120px;
+            font-weight: 300;
+            line-height: 80px;
+            padding-bottom: 30px;
+            margin-bottom: 20px;
+            text-align: center !important;
+            &:before {
+              left: auto;
+              right: 0;
+            }
+          }
+          .text {
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+            margin: 0px 0px 0px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            text-align: center;
+          }
+          .image{
+            display: none;
+          }
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,334 @@
+.flex-light {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 11;
+    .big-hr {
+      background-color: #c28b1e;
+      border: 1px solid #c28b1e;
+      max-width: 100px;
+      height: 3px;
+      width: 100px;
+      text-align: center;
+      display: inline-block;
+      transform: rotate(90deg);
+    }
+    hr {
+      background-color: #ffac07;
+      border: 1px solid #ffac07;
+      max-width: 30px;
+      width: 30px;
+      text-align: center;
+      display: inline-block;
+      transform: rotate(90deg);
+    }
+  }
+
+  .working-process-section {
+    position: relative;
+    background-image: url(../../assets/images/static/bg-1.jpg);
+    padding: 100px 0 100px 0;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.712);
+      z-index: 10;
+    }
+    .text-center {
+      z-index: 11;
+      text-align: center;
+      margin: 0 auto;
+
+      h2 {
+        position: relative;
+        font-size: 48px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        letter-spacing: -3px;
+        color: #fff;
+        font-family: "Work Sans", sans-serif;
+        padding: 100px 0 0 0;
+      }
+    }
+    .row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+
+      .relative {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        z-index: 11;
+
+        .inner-box {
+          position: relative;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-bottom: 30px;
+
+          .icon {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            line-height: 98px;
+            font-size: 50px;
+            color: #fff;
+            text-align: center;
+            border: 1px solid #fff;
+            margin-right: 15px;
+          }
+          .content {
+            .count {
+              position: relative;
+              font-size: 60px;
+              font-weight: 700;
+              color: #fff;
+              line-height: 65px;
+              span {
+                color: #ccad6e;
+              }
+            }
+            h4 {
+              font-size: 22px;
+              font-weight: 500;
+              color: #fff;
+              position: relative;
+              line-height: 1.25em;
+              margin: 0px;
+              background: none;
+            }
+          }
+        }
+      }
+    }
+
+    .text {
+      position: relative;
+      color: #fff;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+      z-index: 11;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .working-process-section {
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.712);
+        z-index: 10;
+      }
+      .text-center {
+        z-index: 11;
+        text-align: center;
+        margin: 0 auto;
+
+        h2 {
+          position: relative;
+          font-size: 40px;
+          font-weight: 500;
+          margin-bottom: 60px;
+          letter-spacing: -3px;
+          color: #fff;
+          font-family: "Work Sans", sans-serif;
+          padding: 100px 0 0 0;
+        }
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+
+        .relative {
+          position: relative;
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          z-index: 11;
+
+          .inner-box {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0 auto 30px auto !important;
+            margin-bottom: 0px;
+
+            .icon {
+              position: relative;
+              width: 100px;
+              height: 100px;
+              line-height: 98px;
+              font-size: 50px;
+              color: #fff;
+              text-align: center;
+              border: 1px solid #fff;
+              margin-right: 15px;
+            }
+            .content {
+              max-width: 300px;
+              width: 100%;
+              .count {
+                margin: 0 auto;
+                position: relative;
+                font-size: 60px;
+                font-weight: 700;
+                color: #fff;
+                line-height: 65px;
+                display: flex;
+                align-items: center;
+              }
+              h4 {
+                font-size: 22px;
+                font-weight: 500;
+                color: #fff;
+                position: relative;
+                line-height: 1.25em;
+                margin: 0px;
+                background: none;
+              }
+            }
+          }
+        }
+      }
+
+      .text {
+        position: relative;
+        color: #fff;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        z-index: 11;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .working-process-section {
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.712);
+        z-index: 10;
+      }
+      .text-center {
+        z-index: 11;
+        text-align: center;
+        margin: 0 auto;
+
+        h2 {
+          position: relative;
+          font-size: 32px;
+          font-weight: 500;
+          margin-bottom: 60px;
+          letter-spacing: -3px;
+          color: #fff;
+          font-family: "Work Sans", sans-serif;
+          padding: 100px 0 0 0;
+        }
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+
+        .relative {
+          position: relative;
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          z-index: 11;
+
+          .inner-box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+
+            .icon {
+              position: relative;
+              width: 100px;
+              height: 100px;
+              line-height: 98px;
+              font-size: 50px;
+              color: #fff;
+              text-align: center;
+              border: none;
+              margin-right: 15px;
+            }
+            .content {
+              .count {
+                margin: 0 auto;
+                position: relative;
+                font-size: 60px;
+                font-weight: 700;
+                color: #fff;
+                line-height: 65px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              h4 {
+                font-size: 22px;
+                font-weight: 500;
+                color: #fff;
+                position: relative;
+                line-height: 1.25em;
+                margin: 0px;
+                background: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+        }
+      }
+
+      .text {
+        position: relative;
+        color: #fff;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        z-index: 11;
+      }
+    }
+  }

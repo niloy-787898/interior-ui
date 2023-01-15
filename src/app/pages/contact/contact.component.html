@@ -1,0 +1,184 @@
+<section class="main-section">
+  <div class="header-area">
+    <div class="header-main">
+      <div class="logo-area">
+        <a href="#"
+          ><img src="../../../assets/images/logo/Sunshine.png" alt=""
+        /></a>
+      </div>
+      <div class="header-right">
+        <div class="menu-area">
+          <ul>
+            <li><a routerLink="/">Home </a></li>
+            <li><a routerLink="/about">About Us </a></li>
+            <li><a routerLink="/help">Service</a></li>
+            <li><a routerLink="/contact">Contacts </a></li>
+            <li>
+              <a href="#"><i class="fas fa-search"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tel">
+          <a href="tel:0905-456-987-3"
+            ><i class="fa-solid fa-phone-flip"></i>0905-456-987-3</a
+          >
+        </div>
+      </div>
+
+      <div (click)="onToggle()" class="navbar-toggle">
+        <i [ngClass]="toggleMenu ? 'fas fa-bars' : 'fas fa-bars'"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="swipper">
+    <div class="image-swiper">
+      <img src="../../../assets/images/static/image-1.jpg" />
+      <div class="text-swipper">
+        <h1>Contact Us</h1>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><i class="fa fa-home" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li> - CONTACT</li>
+        </ul>
+      </div>
+
+      <div class="overlay"></div>
+    </div>
+  </div>
+
+  <div class="mobile-menu" [ngClass]="toggleMenu ? 'show' : 'hidden'">
+    <div class="toggle-menu">
+      <div class="container">
+        <div class="toggle-row">
+          <div class="toggle-top">
+            <div class="toggle-logo">
+              <a href="">
+                <img alt="" src="../../../assets/images/logo/Sunshine.png" />
+              </a>
+            </div>
+            <div class="toggle-icon">
+              <i (click)="onToggle()" class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="toggle-middle">
+            <ul class="toggle-menu">
+              <li><a routerLink="/">Home </a></li>
+              <li><a routerLink="/about">About Us </a></li>
+              <li><a routerLink="/help">Service</a></li>
+              <li><a routerLink="/contact">Contacts </a></li>
+            </ul>
+          </div>
+          <div class="toggle-bottom">
+            <ul>
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-bag-shopping"></i
+              ></a>
+              <span href="">0</span>
+              <a class="menu-children" href="#"
+                ><i class="fa-solid fa-user"></i
+              ></a>
+            </ul>
+            <div class="nav-search">
+              <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+              <input placeholder="Search" type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section-form">
+  <div class="container">
+    <div class="wrapper-box">
+      <div class="row">
+        <div class="image">
+          <img src="../../../assets/images/static/image-76.jpg" alt="" />
+        </div>
+
+        <div class="contact-form-area">
+          <div class="sec-title">
+            <h2>Do You need Our Help For The Next Project? Get In Touch!</h2>
+            <div class="text">
+              Beyond more stoic this along goodness this sed ipsum mongos <br />
+              flusterd impressive man farcrud opened.
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="row">
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Name" required="" />
+              </div>
+
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Email Address" />
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="subject" placeholder="Subject" />
+              </div>
+
+              <div class="form-group">
+                <textarea name="message" placeholder="Message"></textarea>
+              </div>
+
+              <div class="form-group-two">
+                <button class="btn-style-one" type="submit" name="submit-form">
+                  <span>SEND MESSAGE</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-info-two">
+      <div class="row">
+        <div class="content">
+          <h2>New York Office</h2>
+          <div class="text">
+            Beyond more stoic this along this sed ipsum <br />
+            flusterdys impressive man dolor farcrud open <br />
+            after wasteful teling.
+          </div>
+          <ul >
+            <li>
+              <i class="fa-solid fa-map-pin"></i>Address: 63 Nelson Base, New York
+              26025 USA
+            </li>
+            <li>
+              <i class="fa-solid fa-phone-flip"></i>Phone: (234) 501 8607 - (234) 620 7129
+            </li>
+            <li><i class="fa-solid fa-envelope"></i>Email: inquiry@intervio.net</li>
+          </ul>
+        </div>
+
+        <div class="content">
+          <h2>London Office</h2>
+          <div class="text">
+            Beyond more stoic this along this sed ipsum <br />
+            flusterdys impressive man dolor farcrud open <br />
+            after wasteful teling.
+          </div>
+          <ul class="list">
+            <li>
+              <i class="fa-solid fa-map-pin"></i>Address: 54 Islington Park Street,
+              London, N1 1PX
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>Phone: (234) 501 8607 - (234) 620 7129
+            </li>
+            <li><i class="fa-solid fa-envelope"></i>Email: inquiry@intervio.net</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

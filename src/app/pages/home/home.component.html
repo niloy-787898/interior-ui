@@ -1,0 +1,550 @@
+<section class="main-section">
+  <div class="header-area">
+    <div class="header-main">
+      <div class="logo-area">
+        <a href="#"
+          ><img src="../../../assets/images/logo/Sunshine.png" alt=""
+        /></a>
+      </div>
+      <div class="header-right">
+        <div class="menu-area">
+          <ul>
+            <li><a routerLink="/">Home </a></li>
+            <li><a routerLink="/about">About Us </a></li>
+            <li><a routerLink="/help">Service</a></li>
+            <li><a routerLink="/contact">Contacts </a></li>
+            <li>
+              <a href="#"><i class="fas fa-search"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tel">
+          <a href="tel:0905-456-987-3"
+            ><i class="fa-solid fa-phone-flip"></i>0905-456-987-3</a
+          >
+        </div>
+      </div>
+
+      <div (click)="onToggle()" class="navbar-toggle">
+        <i [ngClass]="toggleMenu ? 'fas fa-bars' : 'fas fa-bars'"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="swipper">
+    <swiper
+      [autoplay]="{
+        delay: 3000
+      }"
+      [speed]="2500"
+      [navigation]="true"
+      class="mySwiper"
+    >
+      <ng-template swiperSlide>
+        <div class="image-swiper">
+          <img src="../../../assets/images/static/image-1.jpg" />
+          <div class="text-swipper">
+            <h1>Interior &amp; Exterior Design</h1>
+            <p>
+              Luxury Interior Designing lorem ipsum dolor sit amet consectetur
+              adipisicing elit sed eiusmod tempor incididunt labore dolore magna
+              aliqua.
+            </p>
+            <div class="btn-flex">
+              <a class="upper-btn"><span>WHO WE ARE</span></a>
+              <a class="lower-btn"><span>WORKS WE DID</span></a>
+            </div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="image-swiper">
+          <img src="../../../assets/images/static/image-2.jpg" />
+          <div class="text-swipper">
+            <h1>Set Apart Your Interior Design</h1>
+            <p>
+              Luxury Interior Designing lorem ipsum dolor sit amet consectetur
+              adipisicing elit sed eiusmod tempor incididunt labore dolore magna
+              aliqua.
+            </p>
+            <div class="btn-flex">
+              <a class="upper-btn"><span>WHO WE ARE</span></a>
+              <a class="lower-btn"><span>WORKS WE DID</span></a>
+            </div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="image-swiper">
+          <img src="../../../assets/images/static/image-3.jpg" />
+          <div class="text-swipper">
+            <h1>Natural Materials Earthy Palettes</h1>
+            <p>
+              Luxury Interior Designing lorem ipsum dolor sit amet consectetur
+              adipisicing elit sed eiusmod tempor incididunt labore dolore magna
+              aliqua.
+            </p>
+            <div class="btn-flex">
+              <a class="upper-btn"><span>WHO WE ARE</span></a>
+              <a class="lower-btn"><span>WORKS WE DID</span></a>
+            </div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+
+
+  <div class="mobile-menu" [ngClass]="toggleMenu ? 'show' : 'hidden'">
+    <div class="toggle-menu">
+      <div class="container">
+        <div class="toggle-row">
+          <div class="toggle-top">
+            <div class="toggle-logo">
+              <a href="">
+                <img alt="" src="../../../assets/images/logo/Sunshine.png" />
+              </a>
+            </div>
+            <div class="toggle-icon">
+              <i (click)="onToggle()" class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="toggle-middle">
+            <ul class="toggle-menu">
+              <li><a routerLink="/">Home </a></li>
+              <li><a routerLink="/about">About Us </a></li>
+              <li><a routerLink="/help">Service</a></li>
+              <li><a routerLink="/contact">Contacts </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="main-details">
+  <div class="container">
+    <div class="details">
+      <div class="image">
+        <swiper
+          [autoplay]="{
+            delay: 2000
+          }"
+          [speed]="2500"
+          class="mySwiper"
+        >
+          <ng-template swiperSlide>
+            <img
+              class="image-set"
+              src="../../../assets/images/static/image-27.jpg"
+              alt=""
+            />
+          </ng-template>
+          <ng-template swiperSlide>
+            <img
+              class="image-set"
+              src="../../../assets/images/static/image-28.jpg"
+              alt=""
+            />
+          </ng-template>
+        </swiper>
+      </div>
+
+      <div class="text-content">
+        <div class="content">
+          <h2>
+            Most Talented Builders <br />
+            Architects &amp; Designers
+          </h2>
+          <h4>
+            We create spaces and buildings for our clients &amp; community
+            itedes malis civibus kase iuvaret blandit ipsum.
+          </h4>
+          <div class="text">
+            Beyond more stoic this along goodness this sed wow manatee mongos
+            flusterd impressive man farcrud opened inside owin punitively around
+            after wasteful telling spransac coldly spokeles client. Squid
+            hesitantly gibbered some tyran nically talkative jeepers crud.
+          </div>
+          <div class="experience-years">
+            <div class="years">25</div>
+            <div class="text">
+              Years since we established - experience &amp; still a growing
+              protfolio day by day!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="funfacts-section">
+  <div class="container">
+    <div class="grid">
+      <div class="counter-alighn">
+        <div class="inner">
+          <div class="content">
+            <span class="count-text">34</span>
+            <div class="text">years experience</div>
+          </div>
+          <div class="image">
+            <img src="../../../assets/images/static/fun1).jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="counter-alighn">
+        <div class="inner">
+          <div class="content">
+            <span class="count-text">75</span>
+
+            <div class="text">projects done</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="counter-alighn">
+        <div class="inner">
+          <div class="content">
+            <span class="count-text">28</span>
+
+            <div class="text">crazy thinkers</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="counter-alighn">
+        <div class="inner">
+          <div class="image">
+            <img src="../../../assets/images/static/fun2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <span class="count-text">95</span>
+
+            <div class="text">Happy Clients</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="flex">
+  <hr />
+  <hr class="big-hr" />
+  <hr />
+</div>
+<section class="services-section">
+  <div class="container">
+    <div class="sec-title text-center">
+      <div class="shape-one"></div>
+      <h2>Luxurious &amp; Innovative Services</h2>
+      <div class="text">
+        Flusterd impressive man farcrud open inside owin punitively around after
+        wasteful telling spran coldly spokeles client. Squid hesitantly gibbered
+        some tyran nically talkative crud.
+      </div>
+    </div>
+    <div class="row">
+      <div class="service-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-7.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="content-text">
+              <h4>Home Decoration</h4>
+              <div class="link-btn">
+                <a href="renovation.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-8.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="content-text">
+              <h4>Renovation Ideas</h4>
+              <div class="link-btn">
+                <a href="renovation.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-9.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="content-text">
+              <h4>Lighting Styles</h4>
+              <div class="link-btn">
+                <a href="renovation.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-10.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="content-text">
+              <h4>Architect Design</h4>
+              <div class="link-btn">
+                <a href="renovation.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-7.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="content-text">
+              <h4>Exterior Design</h4>
+              <div class="link-btn">
+                <a href="renovation.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-11.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="content-text">
+              <h4>Interior Planning</h4>
+              <div class="link-btn">
+                <a href="renovation.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="working-process-section">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="flex-light">
+      <hr />
+      <hr class="big-hr" />
+      <hr />
+    </div>
+    <div class="sec-title text-center">
+      <h2>The Process We Follow</h2>
+    </div>
+    <div class="row">
+      <div class="relative">
+        <div class="inner-box">
+          <div class="icon"><i class="fa-solid fa-palette"></i></div>
+          <div class="content">
+            <div class="count">1<span>.</span></div>
+            <h4>Concept Creation</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="inner-box">
+          <div class="icon"><i class="fa-solid fa-paint-roller"></i></div>
+          <div class="content">
+            <div class="count">2<span>.</span></div>
+            <h4>Planning &amp; Selections</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="inner-box">
+          <div class="icon"><i class="fa-solid fa-palette"></i></div>
+          <div class="content">
+            <div class="count">3<span>.</span></div>
+            <h4>Development Styling</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text">
+      Along goodness hey this sed ipsum dui manatee for the one asfer since
+      flustered impressive your longtails opened inside owing ipsum epunitively.
+      Nehil moderatius vimpot dish euitas iuvaret sed ipsum reformid.
+    </div>
+  </div>
+</section>
+
+<div class="flex">
+  <hr />
+  <hr class="big-hr" />
+  <hr />
+</div>
+<section class="team-section">
+  <div class="container">
+    <div class="sec-title text-center">
+      <div class="shape-one"></div>
+      <h2>Impressive Minds</h2>
+      <div class="text">
+        Flusterd impressive man farcrud open inside owin punitively around after
+        wasteful <br />coldly spokeles client. Squid hesitantly gibbered some
+        tyran nically.
+      </div>
+    </div>
+    <div class="row">
+      <div class="team-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-14.jpg" alt="" />
+          </div>
+          <div class="overlay">
+            <div class="content">
+              <h4>Chris Jordan</h4>
+              <h5>designer</h5>
+
+              <div class="social-links">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-13.jpg" alt="" />
+          </div>
+          <div class="overlay">
+            <div class="content">
+              <h4>Chris Jordan</h4>
+              <h5>designer</h5>
+
+              <div class="social-links">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-15.jpg" alt="" />
+          </div>
+          <div class="overlay">
+            <div class="content">
+              <h4>Chris Jordan</h4>
+              <h5>designer</h5>
+
+              <div class="social-links">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-16.jpg" alt="" />
+          </div>
+          <div class="overlay">
+            <div class="content">
+              <h4>Chris Jordan</h4>
+              <h5>designer</h5>
+
+              <div class="social-links">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

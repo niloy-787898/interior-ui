@@ -1,0 +1,238 @@
+<section class="main-section">
+  <div class="header-area">
+    <div class="header-main">
+      <div class="logo-area">
+        <a href="#"
+          ><img src="../../../assets/images/logo/Sunshine.png" alt=""
+        /></a>
+      </div>
+      <div class="header-right">
+        <div class="menu-area">
+          <ul>
+            <li><a routerLink="/">Home </a></li>
+            <li><a routerLink="/about">About Us </a></li>
+            <li><a routerLink="/help">Service</a></li>
+            <li><a routerLink="/contact">Contacts </a></li>
+            <li>
+              <a href="#"><i class="fas fa-search"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tel">
+          <a href="tel:0905-456-987-3"
+            ><i class="fa-solid fa-phone-flip"></i>0905-456-987-3</a
+          >
+        </div>
+      </div>
+
+      <div (click)="onToggle()" class="navbar-toggle">
+        <i [ngClass]="toggleMenu ? 'fas fa-bars' : 'fas fa-bars'"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="swipper">
+    <div class="image-swiper">
+      <img src="../../../assets/images/static/image-1.jpg" />
+      <div class="text-swipper">
+        <h1>What We Do</h1>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><i class="fa fa-home" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>- OUR SERVICES</li>
+        </ul>
+      </div>
+
+      <div class="overlay"></div>
+    </div>
+  </div>
+
+  <div class="mobile-menu" [ngClass]="toggleMenu ? 'show' : 'hidden'">
+    <div class="toggle-menu">
+      <div class="container">
+        <div class="toggle-row">
+          <div class="toggle-top">
+            <div class="toggle-logo">
+              <a href="">
+                <img alt="" src="../../../assets/images/logo/Sunshine.png" />
+              </a>
+            </div>
+            <div class="toggle-icon">
+              <i (click)="onToggle()" class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="toggle-middle">
+            <ul class="toggle-menu">
+              <li><a routerLink="/">Home </a></li>
+              <li><a routerLink="/about">About Us </a></li>
+              <li><a routerLink="/help">Service</a></li>
+              <li><a routerLink="/contact">Contacts </a></li>
+            </ul>
+          </div>
+          <div class="toggle-bottom">
+            <ul>
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-bag-shopping"></i
+              ></a>
+              <span href="">0</span>
+              <a class="menu-children" href="#"
+                ><i class="fa-solid fa-user"></i
+              ></a>
+            </ul>
+            <div class="nav-search">
+              <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+              <input placeholder="Search" type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service-about-us-section">
+  <div class="shape-one"></div>
+  <div class="container">
+    <div class="row">
+      <div class="content">
+        <h2><strong>Intervio</strong> - Interior Design & Architecture Firm</h2>
+        <h4>
+          Sit eit malis civibus kase iuvaret blandit ipsum volumus indis
+          referrentur euno utamur vivendo interpretaris.
+        </h4>
+        <div class="text">
+          Beyond more stoic this along goodness this sed wow manatee mongos
+          flusterd impressive man farcrud opened inside owin punitively around
+          after wasteful telling spransac coldly spokeles client. Squid
+          hesitantly gibbered some tyran nically talkative.
+        </div>
+        <div class="link-btn">
+          <a href="about.html" class="theme-btn btn-style-two"
+            ><span>Read More</span></a
+          >
+        </div>
+      </div>
+
+      <div class="image-block">
+        <div class="image">
+          <img src="../../../assets/images/static/image-43.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="flex">
+  <hr />
+  <hr class="big-hr" />
+  <hr />
+</div>
+<section class="service-services-section">
+  <div class="container">
+    <div class="sec-title text-center">
+      <div class="shape-one"></div>
+      <h2>Luxurious &amp; Innovative Services</h2>
+      <div class="text">
+        Flusterd impressive man farcrud open inside owin punitively around after
+        wasteful telling spran coldly spokeles client. Squid hesitantly gibbered
+        some tyran nically talkative crud.
+      </div>
+    </div>
+    <div class="row">
+      <div class="service-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-7.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="content-text">
+              <h4>Home Decoration</h4>
+              <div class="link-btn">
+                <a href="renovation.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-8.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="content-text">
+              <h4>Renovation Ideas</h4>
+              <div class="link-btn">
+                <a href="renovation.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-9.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="content-text">
+              <h4>Lighting Styles</h4>
+              <div class="link-btn">
+                <a href="renovation.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-10.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="content-text">
+              <h4>Architect Design</h4>
+              <div class="link-btn">
+                <a href="renovation.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-7.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="content-text">
+              <h4>Exterior Design</h4>
+              <div class="link-btn">
+                <a href="renovation.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-block-one">
+        <div class="inner-box">
+          <div class="image">
+            <img src="../../../assets/images/static/image-11.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="content-text">
+              <h4>Interior Planning</h4>
+              <div class="link-btn">
+                <a href="renovation.html" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
